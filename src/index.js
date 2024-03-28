@@ -7,7 +7,9 @@ import StepContext from './StepContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StepContext>
+  //we used <StepContext> here so that it can wrap the entire application and application can access context values in it
+  //parent to child 
+  <StepContext>  
   <React.StrictMode>
     <App />
   </React.StrictMode>
